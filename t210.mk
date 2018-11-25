@@ -19,7 +19,8 @@ TARGET_TEGRA_VERSION := t210
 PRODUCT_PACKAGES += \
     init.t210.rc \
     init.t210_common.rc \
-    init.tlk.rc
+    init.tlk.rc \
+    ueventd.t210ref.rc
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
