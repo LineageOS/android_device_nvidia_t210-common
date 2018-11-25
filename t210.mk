@@ -14,7 +14,8 @@
 # limitations under the License.
 #
 
-TARGET_TEGRA_VERSION := t210
+TARGET_TEGRA_VERSION  := t210
+TARGET_TEGRA_KEYSTORE ?= nvkeystore
 
 # System properties
 include $(LOCAL_PATH)/system_prop.mk
