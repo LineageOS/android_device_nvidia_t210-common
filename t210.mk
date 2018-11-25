@@ -19,6 +19,7 @@ TARGET_TEGRA_VERSION := t210
 PRODUCT_PACKAGES += \
     init.t210.rc \
     init.t210_common.rc \
-    init.tlk.rc
+    init.tlk.rc \
+    ueventd.t210ref.rc
 
 $(call inherit-product, device/nvidia/tegra-common/tegra.mk)
