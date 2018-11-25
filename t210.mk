@@ -14,7 +14,8 @@
 # limitations under the License.
 #
 
-TARGET_TEGRA_VERSION := t210
+TARGET_TEGRA_VERSION  := t210
+TARGET_TEGRA_KEYSTORE ?= nvkeystore
 
 # System properties
 include $(LOCAL_PATH)/system_prop.mk
@@ -24,6 +25,11 @@ PRODUCT_PACKAGES += \
     init.t210_common.rc \
     init.tlk.rc \
     ueventd.t210ref.rc
+
+# Gatekeeper HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
