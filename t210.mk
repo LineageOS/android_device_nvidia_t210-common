@@ -16,6 +16,9 @@
 
 TARGET_TEGRA_VERSION := t210
 
+# System properties
+include $(LOCAL_PATH)/system_prop.mk
+
 PRODUCT_PACKAGES += \
     init.t210.rc \
     init.t210_common.rc \
