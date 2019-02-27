@@ -16,6 +16,7 @@
 
 TARGET_TEGRA_VERSION  := t210
 TARGET_TEGRA_KEYSTORE ?= nvkeystore
+TARGET_TEGRA_GPU      ?= nvgpu
 
 # System properties
 include $(LOCAL_PATH)/system_prop.mk
