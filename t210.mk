@@ -16,6 +16,7 @@
 
 TARGET_TEGRA_VERSION  := t210
 TARGET_TEGRA_KEYSTORE ?= nvkeystore
+TARGET_TEGRA_GPU      ?= nvgpu
 
 # System properties
 include $(LOCAL_PATH)/system_prop.mk
@@ -30,6 +31,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
+
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.mapper@2.0-impl
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
