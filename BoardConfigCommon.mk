@@ -32,4 +32,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_BOARD_PLATFORM := tegra
 TARGET_NO_BOOTLOADER := true
 
+# HIDL
+ifeq ($(TARGET_TARGET_TEGRA_GPU),nvgpu)
+DEVICE_MANIFEST_FILE += device/nvidia/t210-common/t210-nvgpu-manifest.xml
+endif
+
 include device/nvidia/tegra-common/BoardConfigTegra.mk
