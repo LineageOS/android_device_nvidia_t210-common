@@ -138,6 +138,44 @@
 # sensors
 /dev/iio:device*									0660	system	system
 
+#common sensors files
+/sys/bus/iio/devices/iio:device* buffer/enable 0660 system system
+/sys/bus/iio/devices/iio:device* buffer/length 0660 system system
+/sys/bus/iio/devices/iio:device* sampling_frequency 0660 system system
+/sys/bus/iio/devices/iio:device* scan_elements/in_timestamp_en 0660 system system
+/sys/bus/iio/devices/iio:device* hwfifo_flush 0660 system system
+/sys/bus/iio/devices/iio:device* hwfifo_enabled 0660 system system
+/sys/bus/iio/devices/iio:device* hwfifo_watermark 0660 system system
+/sys/bus/iio/devices/iio:device* injection_mode 0660 system system
+
+#accelerometer sensor
+/sys/bus/iio/devices/iio:device* scan_elements/in_accel_x_en 0660 system system
+/sys/bus/iio/devices/iio:device* scan_elements/in_accel_y_en 0660 system system
+/sys/bus/iio/devices/iio:device* scan_elements/in_accel_z_en 0660 system system
+/sys/bus/iio/devices/iio:device* in_accel_x_scale 0660 system system
+/sys/bus/iio/devices/iio:device* in_accel_y_scale 0660 system system
+/sys/bus/iio/devices/iio:device* in_accel_z_scale 0660 system system
+/sys/bus/iio/devices/iio:device* in_accel_injection_raw 0660 system system
+
+#magnetometer sensor
+/sys/bus/iio/devices/iio:device* scan_elements/in_magn_x_en 0660 system system
+/sys/bus/iio/devices/iio:device* scan_elements/in_magn_y_en 0660 system system
+/sys/bus/iio/devices/iio:device* scan_elements/in_magn_z_en 0660 system system
+/sys/bus/iio/devices/iio:device* in_magn_x_scale 0660 system system
+/sys/bus/iio/devices/iio:device* in_magn_y_scale 0660 system system
+/sys/bus/iio/devices/iio:device* in_magn_z_scale 0660 system system
+
+#gyroscope sensor
+/sys/bus/iio/devices/iio:device* scan_elements/in_anglvel_x_en 0660 system system
+/sys/bus/iio/devices/iio:device* scan_elements/in_anglvel_y_en 0660 system system
+/sys/bus/iio/devices/iio:device* scan_elements/in_anglvel_z_en 0660 system system
+/sys/bus/iio/devices/iio:device* in_anglvel_x_scale 0660 system system
+/sys/bus/iio/devices/iio:device* in_anglvel_y_scale 0660 system system
+/sys/bus/iio/devices/iio:device* in_anglvel_z_scale 0660 system system
+
+#tilt sensor
+/sys/bus/iio/devices/iio:device* scan_elements/in_tilt_en 0660 system system
+
 /sys/devices/nvs_dsm/iio:device*		enable					0660	system	system
 /sys/devices/nvs_dsm/iio:device*		buffer/enable				0660	system	system
 /sys/devices/nvs_dsm/iio:device*		buffer/length				0660	system	system
