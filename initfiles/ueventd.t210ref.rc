@@ -358,3 +358,6 @@ subsystem video4linux
 
 # sysfs properties
 /sys/devices/system/cpu*   online   0664  system system
+
+# Reboot2Payload
+/sys/bus/platform/devices/r2p default_payload_ready 0660 system system
