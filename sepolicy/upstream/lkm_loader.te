@@ -25,7 +25,6 @@ not_full_treble(`allow lkm_loader toolbox_exec:file rx_file_perms;')
 r_dir_file(lkm_loader, factory_file);
 allow lkm_loader vendor_firmware_wifi_file:file r_file_perms;
 allow lkm_loader kernel:system module_request;
-allow lkm_loader system_file:file execute_no_trans;
 allow lkm_loader self:udp_socket { create ioctl };
 allow lkm_loader self:capability { net_raw net_admin };
 allow lkm_loader self:netlink_route_socket { create setopt write getattr nlmsg_write read bind nlmsg_read };
@@ -34,9 +33,5 @@ allow lkm_loader proc_bcmdhd_pcie:file {open read};
 allow lkm_loader sysfs_bcmdhd_pcie:file {open read};
 allow lkm_loader kmsg_device:chr_file w_file_perms;
 allow lkm_loader vendor_file:system module_load;
-allow lkm_loader proc_brcmfmac_pcie:file r_file_perms;
-allow lkm_loader sysfs_brcmfmac_pcie:file r_file_perms;
-
-recovery_only(`
-  set_prop(lkm_loader, vendor_lkm_prop);
-')
+allow lkm_loader proc_brcmfmac_pcie:file {open read};
+allow lkm_loader sysfs_brcmfmac_pcie:file {open read};

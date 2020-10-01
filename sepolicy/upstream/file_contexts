@@ -30,7 +30,6 @@
 /dev/block/platform/tegra-sata\.0/by-name/MDA u:object_r:metadata_block_device:s0
 
 # storage daemon
-/system/bin/storageproxyd 		u:object_r:tee_exec:s0
 (/system)?/vendor/bin/storageproxyd	u:object_r:tee_exec:s0
 
 # lkm
