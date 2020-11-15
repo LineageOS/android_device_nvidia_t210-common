@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,24 +11,17 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-TARGET_TEGRA_VERSION := t210
-TARGET_TEGRA_GPU     ?= nvgpu
-TARGET_TEGRA_PBC     ?= pbc2
+LOCAL_PATH := $(call my-dir)
+T210_WIDEVINE_PATH := ../../../../../vendor/nvidia/t210/widevine
 
-# System properties
-include $(LOCAL_PATH)/system_prop.mk
-
-PRODUCT_PACKAGES += \
-    init.t210.rc \
-    init.t210_common.rc \
-    init.tlk.rc \
-    ueventd.t210ref.rc
-
-ifeq ($(TARGET_TEGRA_PBC),pbc2)
-PRODUCT_PACKAGES += \
-    pbc.conf
-endif
-
-include device/nvidia/tegra-common/tegra.mk
+include $(CLEAR_VARS)
+LOCAL_MODULE               := liboemcrypto
+LOCAL_SRC_FILES            := $(T210_WIDEVINE_PATH)/lib/liboemcrypto.so
+LOCAL_MODULE_SUFFIX        := .so
+LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
+LOCAL_MODULE_TARGET_ARCH   := arm
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
