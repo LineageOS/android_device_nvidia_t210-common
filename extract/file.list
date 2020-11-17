@@ -1,0 +1,38 @@
+# Firmware
+stock-t210	vendor/firmware/adsp.elf				t210/firmware/adsp.elf
+stock-t210	vendor/firmware/nvaacdec.elf				t210/firmware/nvaacdec.elf
+stock-t210	vendor/firmware/nvadma.elf				t210/firmware/nvadma.elf
+stock-t210	vendor/firmware/nvadma_tx.elf				t210/firmware/nvadma_tx.elf
+stock-t210	vendor/firmware/nvapm.elf				t210/firmware/nvapm.elf
+stock-t210	vendor/firmware/nvmp3dec.elf				t210/firmware/nvmp3dec.elf
+stock-t210	vendor/firmware/nvoice.elf				t210/firmware/nvoice.elf
+stock-t210	vendor/firmware/nvspkprot.elf				t210/firmware/nvspkprot.elf
+stock-t210	vendor/firmware/nvsrc.elf				t210/firmware/nvsrc.elf
+stock-t210	vendor/firmware/gm20b/acr_ucode.bin			t210/firmware/gm20b/acr_ucode.bin
+stock-t210	vendor/firmware/gm20b/fecs.bin				t210/firmware/gm20b/fecs.bin
+stock-t210	vendor/firmware/gm20b/fecs_sig.bin			t210/firmware/gm20b/fecs_sig.bin
+stock-t210	vendor/firmware/gm20b/gpccs.bin				t210/firmware/gm20b/gpccs.bin
+stock-t210	vendor/firmware/gm20b/gpmu_ucode.bin			t210/firmware/gm20b/gpmu_ucode.bin
+stock-t210	vendor/firmware/gm20b/gpmu_ucode_desc.bin		t210/firmware/gm20b/gpmu_ucode_desc.bin
+stock-t210	vendor/firmware/gm20b/gpmu_ucode_image.bin		t210/firmware/gm20b/gpmu_ucode_image.bin
+stock-t210	vendor/firmware/gm20b/gpu2cde.bin			t210/firmware/gm20b/gpu2cde.bin
+stock-t210	vendor/firmware/gm20b/NETB_img.bin			t210/firmware/gm20b/NETB_img.bin
+stock-t210	vendor/firmware/gm20b/pmu_bl.bin			t210/firmware/gm20b/pmu_bl.bin
+stock-t210	vendor/firmware/gm20b/pmu_sig.bin			t210/firmware/gm20b/pmu_sig.bin
+stock-t210	vendor/firmware/tegra21x/nvhost_nvdec_bl_no_wpr020.fw	t210/firmware/tegra21x/nvhost_nvdec_bl_no_wpr020.fw
+stock-t210	vendor/firmware/tegra21x/nvhost_nvdec020.fw		t210/firmware/tegra21x/nvhost_nvdec020.fw
+stock-t210	vendor/firmware/tegra21x/nvhost_nvdec020_ns.fw		t210/firmware/tegra21x/nvhost_nvdec020_ns.fw
+stock-t210	vendor/firmware/tegra21x/nvhost_nvdec020_prod.fw	t210/firmware/tegra21x/nvhost_nvdec020_prod.fw
+stock-t210	vendor/firmware/tegra21x/nvhost_nvdec_bl020.fw		t210/firmware/tegra21x/nvhost_nvdec_bl020.fw
+stock-t210	vendor/firmware/tegra21x/nvhost_nvdec_bl020_prod.fw	t210/firmware/tegra21x/nvhost_nvdec_bl020_prod.fw
+stock-t210	vendor/firmware/tegra21x/nvhost_nvenc050.fw		t210/firmware/tegra21x/nvhost_nvenc050.fw
+stock-t210	vendor/firmware/tegra21x/nvhost_nvjpg010.fw		t210/firmware/tegra21x/nvhost_nvjpg010.fw
+stock-t210	vendor/firmware/tegra21x/nvhost_tsec.fw			t210/firmware/tegra21x/nvhost_tsec.fw
+stock-t210	vendor/firmware/tegra21x/vic04_ucode.bin		t210/firmware/tegra21x/vic04_ucode.bin
+stock-t210	vendor/firmware/xusb/tegra21x_xusb_firmware		t210/firmware/xusb/tegra21x_xusb_firmware
+stock-t210	vendor/firmware/xusb/tegra210b01_xusb_firmware		t210/firmware/xusb/tegra210b01_xusb_firmware
+
+# Widevine
+stock-t210	vendor/lib/liboemcrypto.so	t210/widevine/lib/liboemcrypto.so
+
+l4t-t210	Linux_for_Tegra/bootloader/nvtboot_recovery.bin		t210/tegraflash/nvtboot_recovery.bin
