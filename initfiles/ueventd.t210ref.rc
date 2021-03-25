@@ -403,3 +403,7 @@ subsystem video4linux
 
 # Reboot2Payload
 /sys/bus/platform/devices/r2p default_payload_ready 0660 system system
+
+# LEDs
+/sys/class/leds/* brightness 0660 system system
+/sys/class/leds/* trigger 0660 system system
