@@ -19,7 +19,7 @@ TARGET_TEGRA_GPU     ?= nvgpu
 TARGET_TEGRA_PBC     ?= pbc2
 
 # System properties
-include $(LOCAL_PATH)/system_prop.mk
+include device/nvidia/t210-common/system_prop.mk
 
 PRODUCT_PACKAGES += \
     init.t210.rc \
