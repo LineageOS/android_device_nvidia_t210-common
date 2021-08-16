@@ -35,4 +35,11 @@ stock-t210	vendor/firmware/xusb/tegra210b01_xusb_firmware		t210/firmware/xusb/te
 # Widevine
 stock-t210	vendor/lib/liboemcrypto.so	t210/widevine/lib/liboemcrypto.so
 
-l4t-t210	Linux_for_Tegra/bootloader/nvtboot_recovery.bin		t210/tegraflash/nvtboot_recovery.bin
+l4t-t210	Linux_for_Tegra/bootloader/t210ref/cboot.bin			t210/bootloader/cboot.bin
+l4t-t210	Linux_for_Tegra/bootloader/t210ref/nvtboot.bin			t210/bootloader/nvtboot.bin
+l4t-t210	Linux_for_Tegra/bootloader/nvtboot_cpu.bin			t210/bootloader/nvtboot_cpu.bin
+l4t-t210	Linux_for_Tegra/bootloader/nvtboot_recovery.bin			t210/bootloader/nvtboot_recovery.bin
+l4t-t210	Linux_for_Tegra/bootloader/rp4.blob				t210/bootloader/rp4.blob
+l4t-t210	Linux_for_Tegra/bootloader/t210ref/sc7entry-firmware.bin	t210/bootloader/sc7entry-firmware.bin
+l4t-t210	Linux_for_Tegra/bootloader/tos-mon-only.img			t210/bootloader/tos-mon-only.img
+l4t-t210	Linux_for_Tegra/bootloader/t210ref/warmboot.bin			t210/bootloader/warmboot.bin
