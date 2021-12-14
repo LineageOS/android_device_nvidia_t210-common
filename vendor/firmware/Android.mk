@@ -120,15 +120,11 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE               := acr_ucode
-LOCAL_SRC_FILES            := $(T210_FIRMWARE_PATH)/gm20b/acr_ucode.bin
-LOCAL_MODULE_SUFFIX        := .bin
-LOCAL_MODULE_CLASS         := ETC
-LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/gm20b
-LOCAL_MODULE_TAGS          := optional
-LOCAL_MODULE_OWNER         := nvidia
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+ACR_UCODE_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/gm20b/acr_ucode.bin
+$(ACR_UCODE_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	$(hide) ln -sf ./nv_acr_ucode_prod.bin $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(ACR_UCODE_SYMLINK)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := fecs
@@ -203,6 +199,26 @@ include $(BUILD_NVIDIA_ARCH_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE               := NETB_img
 LOCAL_SRC_FILES            := $(T210_FIRMWARE_PATH)/gm20b/NETB_img.bin
+LOCAL_MODULE_SUFFIX        := .bin
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/gm20b
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := nv_acr_ucode_dbg
+LOCAL_SRC_FILES            := $(T210_FIRMWARE_PATH)/gm20b/nv_acr_ucode_dbg.bin
+LOCAL_MODULE_SUFFIX        := .bin
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/gm20b
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE               := nv_acr_ucode_prod
+LOCAL_SRC_FILES            := $(T210_FIRMWARE_PATH)/gm20b/nv_acr_ucode_prod.bin
 LOCAL_MODULE_SUFFIX        := .bin
 LOCAL_MODULE_CLASS         := ETC
 LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/gm20b

@@ -34,7 +34,6 @@ PRODUCT_PACKAGES += \
 
 # GPU firmware
 PRODUCT_PACKAGES += \
-    acr_ucode \
     fecs \
     fecs_sig \
     gpccs \
@@ -43,6 +42,8 @@ PRODUCT_PACKAGES += \
     gpmu_ucode_image \
     gpu2cde \
     NETB_img \
+    nv_acr_ucode_dbg \
+    nv_acr_ucode_prod \
     pmu_bl \
     pmu_sig
 
