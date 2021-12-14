@@ -16,16 +16,6 @@ LOCAL_PATH := $(call my-dir)
 T210_FIRMWARE_PATH := ../../../../../vendor/nvidia/t210/firmware
 
 include $(CLEAR_VARS)
-LOCAL_MODULE               := adsp
-LOCAL_SRC_FILES            := $(T210_FIRMWARE_PATH)/adsp.elf
-LOCAL_MODULE_SUFFIX        := .elf
-LOCAL_MODULE_CLASS         := ETC
-LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware
-LOCAL_MODULE_TAGS          := optional
-LOCAL_MODULE_OWNER         := nvidia
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE               := nvaacdec
 LOCAL_SRC_FILES            := $(T210_FIRMWARE_PATH)/nvaacdec.elf
 LOCAL_MODULE_SUFFIX        := .elf

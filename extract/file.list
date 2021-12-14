@@ -1,5 +1,4 @@
 # Firmware
-stock-t210	vendor/firmware/adsp.elf				t210/firmware/adsp.elf
 stock-t210	vendor/firmware/nvaacdec.elf				t210/firmware/nvaacdec.elf
 stock-t210	vendor/firmware/nvadma.elf				t210/firmware/nvadma.elf
 stock-t210	vendor/firmware/nvadma_tx.elf				t210/firmware/nvadma_tx.elf
