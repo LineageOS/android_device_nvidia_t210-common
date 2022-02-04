@@ -176,6 +176,10 @@
 #tilt sensor
 /sys/bus/iio/devices/iio:device* scan_elements/in_tilt_en 0660 system system
 
+#ambient light sensor
+/sys/bus/iio/devices/iio:device* in_illuminance_integration_time 0660 system system
+/sys/bus/iio/devices/iio:device* in_illuminance_input 0660 system system
+
 /sys/devices/nvs_dsm/iio:device*		enable					0660	system	system
 /sys/devices/nvs_dsm/iio:device*		buffer/enable				0660	system	system
 /sys/devices/nvs_dsm/iio:device*		buffer/length				0660	system	system
