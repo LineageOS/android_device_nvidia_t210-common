@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f9cbebd_6e31ffc4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-02-04T03:52:28Z",
+      "side": 1,
+      "message": "Verified on multiple t210 targets",
+      "revId": "b838dc81ef6dfd40ae0d9ae479f6a58e53cbbeab",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
