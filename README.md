@@ -1,17 +1,17 @@
-# Common Device configuration for Nvidia Tegra X1
+# Common Device configuration for Nvidia Tegra X1 / Tegra X1+
 
 ## Spec Sheet
 | Feature                 | Specification                     |
 | :---------------------- | :-------------------------------- |
-| Model Number            | T210                              |
-| Code Name               | Erista                            |
+| Model Number            | T210 / T210b01                    |
+| Code Name               | Erista / Mariko                   |
 | CPU Architecture        | Cortex-A57 + Cortex-A53           |
 | CPU Cores               | 4+4                               |
-| Max CPU Frequency       | 1.9 GHz / 1.3 GHz                 |
+| Max CPU Frequency       | 1.9 GHz & 1.3 GHz                 |
 | GPU Architecture        | GM20B (Maxwell)                   |
 | GPU Cores               | 256                               |
-| Max GPU Frequency       | 1000 MHz                          |
-| Release Date            | Q2 2015                           |
+| Max GPU Frequency       | 1000 MHz / 1267 MHz               |
+| Release Date            | Q2 2015 / Q1 2019                 |
 
 ## Copyright
 
