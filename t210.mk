@@ -18,8 +18,8 @@ TARGET_TEGRA_VERSION := t210
 TARGET_TEGRA_GPU     ?= nvgpu
 TARGET_TEGRA_PBC     ?= pbc2
 
-# System properties
-include device/nvidia/t210-common/system_prop.mk
+# Properties
+include device/nvidia/t210-common/properties.mk
 
 PRODUCT_PACKAGES += \
     init.t210.rc \
