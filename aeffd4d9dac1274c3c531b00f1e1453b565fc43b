@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "011e81c9_1bb16d01",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27741
+      },
+      "writtenOn": "2022-04-07T14:53:45Z",
+      "side": 1,
+      "message": "verified on icosa\nkills error msg on bootup",
+      "revId": "aeffd4d9dac1274c3c531b00f1e1453b565fc43b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
