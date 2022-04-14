@@ -29,8 +29,8 @@ PRODUCT_PACKAGES += \
 
 # Xusb firmware
 PRODUCT_PACKAGES += \
-    tegra210b01_xusb_firmware \
-    tegra21x_xusb_firmware
+    xusb.bin \
+    xusb_b01.bin
 
 # GPU firmware
 PRODUCT_PACKAGES += \

@@ -95,27 +95,31 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
-T210_XUSB_SYMLINK    := $(TARGET_OUT_VENDOR)/firmware/tegra21x_xusb_firmware
 T210B01_XUSB_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/tegra210b01_xusb_firmware
-$(T210_XUSB_SYMLINK) $(T210B01_XUSB_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	$(hide) ln -sf ./xusb/$(notdir $@) $@
+$(T210B01_XUSB_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	$(hide) ln -sf ./nvidia/tegra210b01/xusb.bin $@
+
+T210_XUSB_SYMLINK    := $(TARGET_OUT_VENDOR)/firmware/tegra21x_xusb_firmware
+$(T210_XUSB_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	$(hide) ln -sf ./nvidia/tegra210/xusb.bin $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(T210_XUSB_SYMLINK) $(T210B01_XUSB_SYMLINK)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE               := tegra210b01_xusb_firmware
+LOCAL_MODULE               := xusb_b01.bin
+LOCAL_MODULE_STEM          := xusb.bin
 LOCAL_SRC_FILES            := $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware
 LOCAL_MODULE_CLASS         := ETC
-LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/xusb
+LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/nvidia/tegra210b01
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE               := tegra21x_xusb_firmware
+LOCAL_MODULE               := xusb.bin
 LOCAL_SRC_FILES            := $(T210_FIRMWARE_PATH)/xusb/tegra21x_xusb_firmware
 LOCAL_MODULE_CLASS         := ETC
-LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/xusb
+LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/nvidia/tegra210
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
