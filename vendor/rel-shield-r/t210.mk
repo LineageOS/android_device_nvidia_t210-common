@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/nvidia/t210-common/vendor
+LOCAL_PATH := device/nvidia/t210-common/vendor/rel-shield-r
 
 $(call inherit-product, $(LOCAL_PATH)/t210-recovery.mk)
 
@@ -61,6 +61,6 @@ PRODUCT_PACKAGES += \
     vic04_ucode
 
 # Oemcrypto
-ifeq ($(TARGET_TEGRA_WIDEVINE),true)
+ifneq ($(TARGET_TEGRA_WIDEVINE),)
 PRODUCT_PACKAGES += liboemcrypto
 endif

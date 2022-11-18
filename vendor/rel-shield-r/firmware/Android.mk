@@ -12,8 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifeq ($(TARGET_TEGRA_FIRMWARE_BRANCH),rel-shield-r)
 LOCAL_PATH := $(call my-dir)
-T210_FIRMWARE_PATH := ../../../../../vendor/nvidia/t210/firmware
+T210_FIRMWARE_PATH := ../../../../../../vendor/nvidia/t210/rel-shield-r/firmware
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := nvaacdec
@@ -349,3 +350,4 @@ LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/tegra21x
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
+endif

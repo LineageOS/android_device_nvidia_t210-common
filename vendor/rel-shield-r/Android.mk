@@ -1,4 +1,4 @@
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,15 +13,5 @@
 # limitations under the License.
 
 LOCAL_PATH := $(call my-dir)
-T210_WIDEVINE_PATH := ../../../../../vendor/nvidia/t210/widevine
 
-include $(CLEAR_VARS)
-LOCAL_MODULE               := liboemcrypto
-LOCAL_SRC_FILES            := $(T210_WIDEVINE_PATH)/lib/liboemcrypto.so
-LOCAL_MODULE_SUFFIX        := .so
-LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
-LOCAL_MODULE_TARGET_ARCH   := arm
-LOCAL_MODULE_TAGS          := optional
-LOCAL_MODULE_OWNER         := nvidia
-LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(call all-makefiles-under,$(LOCAL_PATH))

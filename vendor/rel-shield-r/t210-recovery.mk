@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-T210_FIRMWARE_PATH := vendor/nvidia/t210/firmware
+T210_FIRMWARE_PATH := vendor/nvidia/t210/rel-shield-r/firmware
 
 # Firmware
 ifneq ($(filter $(TARGET_TEGRA_KERNEL), 3.10 4.9),)
