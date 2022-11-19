@@ -16,7 +16,6 @@
 
 TARGET_TEGRA_VERSION := t210
 TARGET_TEGRA_GPU     ?= nvgpu
-TARGET_TEGRA_PBC     ?= pbc2
 
 # Properties
 include device/nvidia/t210-common/properties.mk
@@ -26,10 +25,5 @@ PRODUCT_PACKAGES += \
     init.t210_common.rc \
     init.tlk.rc \
     ueventd.t210ref.rc
-
-ifeq ($(TARGET_TEGRA_PBC),pbc2)
-PRODUCT_PACKAGES += \
-    pbc.conf
-endif
 
 include device/nvidia/tegra-common/tegra.mk
