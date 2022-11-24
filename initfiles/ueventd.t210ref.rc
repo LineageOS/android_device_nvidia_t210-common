@@ -443,6 +443,9 @@ subsystem nvidia-gpu-v2
 # vdd-pre-reg regulator node
 /sys/class/regulator/regulator.5	microvolts	0664 system system
 
+/sys/devices/bluedroid_pm/rfkill/rfkill* state 0664 bluetooth bluetooth
+/sys/devices/bluedroid_pm/rfkill/rfkill* type 0664 bluetooth bluetooth
+
 # Reboot2Payload
 /sys/bus/platform/devices/r2p default_payload_ready 0660 system system
 
