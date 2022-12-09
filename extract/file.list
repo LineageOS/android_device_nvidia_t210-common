@@ -1,4 +1,5 @@
 # Firmware
+l4t-t210	drivers/lib/firmware/adsp.elf				firmware/
 stock-t210	vendor/firmware/nvaacdec.elf				firmware/
 stock-t210	vendor/firmware/nvadma.elf				firmware/
 stock-t210	vendor/firmware/nvadma_tx.elf				firmware/
