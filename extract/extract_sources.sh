@@ -14,4 +14,5 @@
 # limitations under the License.
 #
 
+SOURCE_PATHS+=("t210-common");
 FILELIST_PATHS+=("t210-common");

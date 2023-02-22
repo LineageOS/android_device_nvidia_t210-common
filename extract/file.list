@@ -35,6 +35,8 @@ stock-t210	vendor/firmware/xusb/tegra210b01_xusb_firmware		t210/rel-shield-r/fir
 # Widevine
 stock-t210	vendor/lib/liboemcrypto.so	t210/rel-shield-r/widevine/lib/liboemcrypto.so
 
+# Bootloader
+# r32 current
 l4t-t210	Linux_for_Tegra/bootloader/t210ref/cboot.bin			t210/r32/bootloader/cboot.bin
 l4t-t210	Linux_for_Tegra/bootloader/t210ref/nvtboot.bin			t210/r32/bootloader/nvtboot.bin
 l4t-t210	Linux_for_Tegra/bootloader/nvtboot_cpu.bin			t210/r32/bootloader/nvtboot_cpu.bin
@@ -43,3 +45,13 @@ l4t-t210	Linux_for_Tegra/bootloader/rp4.blob				t210/r32/bootloader/rp4.blob
 l4t-t210	Linux_for_Tegra/bootloader/t210ref/sc7entry-firmware.bin	t210/r32/bootloader/sc7entry-firmware.bin
 l4t-t210	Linux_for_Tegra/bootloader/tos-mon-only.img			t210/r32/bootloader/tos-mon-only.img
 l4t-t210	Linux_for_Tegra/bootloader/t210ref/warmboot.bin			t210/r32/bootloader/warmboot.bin
+
+# r32.6.1
+l4t-t210-3261	Linux_for_Tegra/bootloader/t210ref/cboot.bin			t210/r32.6.1/bootloader/cboot.bin
+l4t-t210-3261	Linux_for_Tegra/bootloader/t210ref/nvtboot.bin			t210/r32.6.1/bootloader/nvtboot.bin
+l4t-t210-3261	Linux_for_Tegra/bootloader/nvtboot_cpu.bin			t210/r32.6.1/bootloader/nvtboot_cpu.bin
+l4t-t210-3261	Linux_for_Tegra/bootloader/nvtboot_recovery.bin			t210/r32.6.1/bootloader/nvtboot_recovery.bin
+l4t-t210-3261	Linux_for_Tegra/bootloader/rp4.blob				t210/r32.6.1/bootloader/rp4.blob
+l4t-t210-3261	Linux_for_Tegra/bootloader/t210ref/sc7entry-firmware.bin	t210/r32.6.1/bootloader/sc7entry-firmware.bin
+l4t-t210-3261	Linux_for_Tegra/bootloader/tos-mon-only.img			t210/r32.6.1/bootloader/tos-mon-only.img
+l4t-t210-3261	Linux_for_Tegra/bootloader/t210ref/warmboot.bin			t210/r32.6.1/bootloader/warmboot.bin
