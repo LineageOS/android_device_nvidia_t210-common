@@ -95,16 +95,6 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
-T210B01_XUSB_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/tegra210b01_xusb_firmware
-$(T210B01_XUSB_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	$(hide) ln -sf ./nvidia/tegra210b01/xusb.bin $@
-
-T210_XUSB_SYMLINK    := $(TARGET_OUT_VENDOR)/firmware/tegra21x_xusb_firmware
-$(T210_XUSB_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	$(hide) ln -sf ./nvidia/tegra210/xusb.bin $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(T210_XUSB_SYMLINK) $(T210B01_XUSB_SYMLINK)
-
 include $(CLEAR_VARS)
 LOCAL_MODULE               := xusb_b01.bin
 LOCAL_MODULE_STEM          := xusb.bin
@@ -113,6 +103,8 @@ LOCAL_MODULE_CLASS         := ETC
 LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/nvidia/tegra210b01
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
+LOCAL_POST_INSTALL_CMD     := \
+    ln -sf ./nvidia/tegra210b01/xusb.bin $(TARGET_OUT_VENDOR)/firmware/tegra210b01_xusb_firmware
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -122,13 +114,9 @@ LOCAL_MODULE_CLASS         := ETC
 LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/nvidia/tegra210
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
+LOCAL_POST_INSTALL_CMD     := \
+    ln -sf ./nvidia/tegra210/xusb.bin $(TARGET_OUT_VENDOR)/firmware/tegra21x_xusb_firmware
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
-
-ACR_UCODE_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/gm20b/acr_ucode.bin
-$(ACR_UCODE_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	$(hide) ln -sf ./nv_acr_ucode_prod.bin $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(ACR_UCODE_SYMLINK)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := fecs
@@ -228,6 +216,8 @@ LOCAL_MODULE_CLASS         := ETC
 LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/gm20b
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
+LOCAL_POST_INSTALL_CMD     := \
+    ln -sf ./nv_acr_ucode_prod.bin $(TARGET_OUT_VENDOR)/firmware/gm20b/acr_ucode.bin
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
