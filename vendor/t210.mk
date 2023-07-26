@@ -14,7 +14,7 @@
 
 LOCAL_PATH := device/nvidia/t210-common/vendor
 
-$(call inherit-product, $(LOCAL_PATH)/t210-recovery.mk)
+include $(LOCAL_PATH)/t210-recovery.mk
 
 # Audio firmware
 PRODUCT_PACKAGES += \
