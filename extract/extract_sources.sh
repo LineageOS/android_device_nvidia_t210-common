@@ -16,3 +16,4 @@
 
 SOURCE_PATHS+=("t210-common");
 FILELIST_PATHS+=("t210-common");
+PATCH_PATHS+=("t210-common");

@@ -55,3 +55,17 @@ l4t-t210-3261	bootloader/rp4.blob				bootloader/
 l4t-t210-3261	bootloader/t210ref/sc7entry-firmware.bin	bootloader/
 l4t-t210-3261	bootloader/tos-mon-only.img			bootloader/
 l4t-t210-3261	bootloader/t210ref/warmboot.bin			bootloader/
+
+# Tegraflash
+l4t-t210	bootloader/tegraflash.py		tegraflash/
+l4t-t210	bootloader/tegraflash_internal.py	tegraflash/
+l4t-t210	bootloader/tegrabct			tegraflash/
+l4t-t210	bootloader/tegradevflash		tegraflash/
+l4t-t210	bootloader/tegrahost			tegraflash/
+l4t-t210	bootloader/tegraparser			tegraflash/
+l4t-t210	bootloader/tegrarcm			tegraflash/
+l4t-t210	bootloader/tegrasign			tegraflash/
+l4t-t210	bootloader/tegrasign_v3.py		tegraflash/
+l4t-t210	bootloader/tegrasign_v3_internal.py	tegraflash/
+l4t-t210	bootloader/tegrasign_v3_util.py		tegraflash/
+l4t-t210	bootloader/tegraopenssl			tegraflash/
