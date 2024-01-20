@@ -17,10 +17,10 @@ T210_FIRMWARE_PATH := vendor/nvidia/t210/rel-shield-r/firmware
 # Firmware
 ifneq ($(filter $(TARGET_TEGRA_KERNEL), 3.10 4.9),)
 PRODUCT_COPY_FILES += \
-    $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:recovery/root/lib/firmware/tegra21x_xusb_firmware \
+    $(T210_FIRMWARE_PATH)/xusb/tegra21x_xusb_firmware:recovery/root/lib/firmware/tegra21x_xusb_firmware \
     $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:recovery/root/lib/firmware/tegra210b01_xusb_firmware
 else
 PRODUCT_COPY_FILES += \
-    $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra210/xusb.bin \
+    $(T210_FIRMWARE_PATH)/xusb/tegra21x_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra210/xusb.bin \
     $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra210b01/xusb.bin
 endif
