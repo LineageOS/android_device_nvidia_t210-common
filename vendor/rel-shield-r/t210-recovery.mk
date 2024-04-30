@@ -22,5 +22,7 @@ PRODUCT_COPY_FILES += \
 else
 PRODUCT_COPY_FILES += \
     $(T210_FIRMWARE_PATH)/xusb/tegra21x_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra210/xusb.bin \
-    $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra210b01/xusb.bin
+    $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra210b01/xusb.bin \
+    $(T210_FIRMWARE_PATH)/xusb/tegra21x_xusb_firmware:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/nvidia/tegra210/xusb.bin \
+    $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/nvidia/tegra210b01/xusb.bin
 endif
