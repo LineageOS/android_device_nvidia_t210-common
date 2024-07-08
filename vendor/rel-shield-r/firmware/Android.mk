@@ -104,8 +104,7 @@ LOCAL_MODULE_CLASS         := ETC
 LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/nvidia/tegra210b01
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
-LOCAL_POST_INSTALL_CMD     := \
-    ln -sf ./nvidia/tegra210b01/xusb.bin $(TARGET_OUT_VENDOR)/firmware/tegra210b01_xusb_firmware
+LOCAL_REQUIRED_MODULES     := tegra210b01_xusb_firmware_symlink
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -115,8 +114,7 @@ LOCAL_MODULE_CLASS         := ETC
 LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/nvidia/tegra210
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
-LOCAL_POST_INSTALL_CMD     := \
-    ln -sf ./nvidia/tegra210/xusb.bin $(TARGET_OUT_VENDOR)/firmware/tegra21x_xusb_firmware
+LOCAL_REQUIRED_MODULES     := tegra21x_xusb_firmware_symlink
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -217,8 +215,7 @@ LOCAL_MODULE_CLASS         := ETC
 LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/gm20b
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
-LOCAL_POST_INSTALL_CMD     := \
-    ln -sf ./nv_acr_ucode_prod.bin $(TARGET_OUT_VENDOR)/firmware/gm20b/acr_ucode.bin
+LOCAL_MODULE_SYMLINKS      := acr_ucode.bin
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)

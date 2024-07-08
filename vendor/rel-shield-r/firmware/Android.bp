@@ -1,0 +1,13 @@
+install_symlink {
+    name: "tegra210b01_xusb_firmware_symlink",
+    vendor: true,
+    installed_location: "firmware/tegra210b01_xusb_firmware",
+    symlink_target: "nvidia/tegra210b01/xusb.bin",
+}
+
+install_symlink {
+    name: "tegra21x_xusb_firmware_symlink",
+    vendor: true,
+    installed_location: "firmware/tegra21x_xusb_firmware",
+    symlink_target: "nvidia/tegra210/xusb.bin",
+}

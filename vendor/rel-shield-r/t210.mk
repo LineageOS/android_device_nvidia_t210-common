@@ -16,6 +16,8 @@ LOCAL_PATH := device/nvidia/t210-common/vendor/rel-shield-r
 
 include $(LOCAL_PATH)/t210-recovery.mk
 
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # Audio firmware
 PRODUCT_PACKAGES += \
     adsp \
