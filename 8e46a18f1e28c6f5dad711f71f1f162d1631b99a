@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1fd7b767_dc30e584",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-12T22:11:11Z",
+      "side": 1,
+      "message": "Same comment as in https://review.lineageos.org/397069",
+      "revId": "8e46a18f1e28c6f5dad711f71f1f162d1631b99a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
