@@ -20,6 +20,9 @@ TARGET_TEGRA_FIRMWARE_BRANCH ?= rel-shield-r
 # Properties
 include device/nvidia/t210-common/properties.mk
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += device/nvidia/t210-common
+
 PRODUCT_PACKAGES += \
     init.t210.rc \
     init.t210_common.rc \
