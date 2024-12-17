@@ -1,4 +1,4 @@
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020-2024 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,52 +13,71 @@
 # limitations under the License.
 
 LOCAL_PATH := device/nvidia/t210-common/vendor/rel-shield-r
-
-include $(LOCAL_PATH)/t210-recovery.mk
-
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
-# Audio firmware
-PRODUCT_PACKAGES += \
-    adsp \
-    nvaacdec \
-    nvadma \
-    nvadma_tx \
-    nvapm \
-    nvmp3dec \
-    nvoice \
-    nvspkprot \
-    nvsrc
+T210_FIRMWARE_PATH := vendor/nvidia/t210/rel-shield-r/firmware
 
-# Xusb firmware
-PRODUCT_PACKAGES += \
-    xusb.bin \
-    xusb_b01.bin
+# Audio firmware
+PRODUCT_COPY_FILES += \
+    $(T210_FIRMWARE_PATH)/nvaacdec.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/nvaacdec.elf \
+    $(T210_FIRMWARE_PATH)/nvadma.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/nvadma.elf \
+    $(T210_FIRMWARE_PATH)/nvadma_tx.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/nvadma_tx.elf \
+    $(T210_FIRMWARE_PATH)/nvapm.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/nvapm.elf \
+    $(T210_FIRMWARE_PATH)/nvmp3dec.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/nvmp3dec.elf \
+    $(T210_FIRMWARE_PATH)/nvoice.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/nvoice.elf \
+    $(T210_FIRMWARE_PATH)/nvspkprot.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/nvspkprot.elf \
+    $(T210_FIRMWARE_PATH)/nvsrc.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/nvsrc.elf
 
 # GPU firmware
+PRODUCT_COPY_FILES += \
+    $(T210_FIRMWARE_PATH)/gm20b/fecs.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/fecs.bin \
+    $(T210_FIRMWARE_PATH)/gm20b/fecs_sig.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/fecs_sig.bin \
+    $(T210_FIRMWARE_PATH)/gm20b/gpccs.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/gpccs.bin \
+    $(T210_FIRMWARE_PATH)/gm20b/gpmu_ucode.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/gpmu_ucode.bin \
+    $(T210_FIRMWARE_PATH)/gm20b/gpmu_ucode_desc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/gpmu_ucode_desc.bin \
+    $(T210_FIRMWARE_PATH)/gm20b/gpmu_ucode_image.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/gpmu_ucode_image.bin \
+    $(T210_FIRMWARE_PATH)/gm20b/gpu2cde.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/gpu2cde.bin \
+    $(T210_FIRMWARE_PATH)/gm20b/NETB_img.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/NETB_img.bin \
+    $(T210_FIRMWARE_PATH)/gm20b/nv_acr_ucode_dbg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/nv_acr_ucode_dbg.bin \
+    $(T210_FIRMWARE_PATH)/gm20b/nv_acr_ucode_prod.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/nv_acr_ucode_prod.bin \
+    $(T210_FIRMWARE_PATH)/gm20b/pmu_bl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/pmu_bl.bin \
+    $(T210_FIRMWARE_PATH)/gm20b/pmu_sig.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gm20b/pmu_sig.bin
+
 PRODUCT_PACKAGES += \
-    fecs \
-    fecs_sig \
-    gpccs \
-    gpmu_ucode \
-    gpmu_ucode_desc \
-    gpmu_ucode_image \
-    gpu2cde \
-    NETB_img \
-    nv_acr_ucode_dbg \
-    nv_acr_ucode_prod \
-    pmu_bl \
-    pmu_sig
+    acr_ucode_symlink
 
 # General firmware
+PRODUCT_COPY_FILES += \
+    $(T210_FIRMWARE_PATH)/tegra21x/nvhost_nvdec020.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra21x/nvhost_nvdec020.fw \
+    $(T210_FIRMWARE_PATH)/tegra21x/nvhost_nvdec020_ns.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra21x/nvhost_nvdec020_ns.fw \
+    $(T210_FIRMWARE_PATH)/tegra21x/nvhost_nvdec020_prod.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra21x/nvhost_nvdec020_prod.fw \
+    $(T210_FIRMWARE_PATH)/tegra21x/nvhost_nvdec_bl020.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra21x/nvhost_nvdec_bl020.fw \
+    $(T210_FIRMWARE_PATH)/tegra21x/nvhost_nvdec_bl020_prod.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra21x/nvhost_nvdec_bl020_prod.fw \
+    $(T210_FIRMWARE_PATH)/tegra21x/nvhost_nvdec_bl_no_wpr020.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra21x/nvhost_nvdec_bl_no_wpr020.fw \
+    $(T210_FIRMWARE_PATH)/tegra21x/nvhost_nvenc050.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra21x/nvhost_nvenc050.fw \
+    $(T210_FIRMWARE_PATH)/tegra21x/nvhost_nvjpg010.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra21x/nvhost_nvjpg010.fw \
+    $(T210_FIRMWARE_PATH)/tegra21x/nvhost_tsec.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra21x/nvhost_tsec.fw \
+    $(T210_FIRMWARE_PATH)/tegra21x/vic04_ucode.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra21x/vic04_ucode.bin
+
+# Xusb firmware
+PRODUCT_COPY_FILES += \
+    $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/tegra210b01/xusb.bin \
+    $(T210_FIRMWARE_PATH)/xusb/tegra21x_xusb_firmware:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/tegra210/xusb.bin
+
 PRODUCT_PACKAGES += \
-    nvhost_nvdec020 \
-    nvhost_nvdec020_ns \
-    nvhost_nvdec020_prod \
-    nvhost_nvdec_bl020 \
-    nvhost_nvdec_bl020_prod \
-    nvhost_nvdec_bl_no_wpr020 \
-    nvhost_nvenc050 \
-    nvhost_nvjpg010 \
-    nvhost_tsec \
-    vic04_ucode
+    tegra210b01_xusb_firmware_symlink \
+    tegra21x_xusb_firmware_symlink
+
+
+# Recovery / Boot Ramdisk
+ifneq ($(filter $(TARGET_TEGRA_KERNEL), 3.10 4.9),)
+PRODUCT_COPY_FILES += \
+    $(T210_FIRMWARE_PATH)/xusb/tegra21x_xusb_firmware:recovery/root/lib/firmware/tegra21x_xusb_firmware \
+    $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:recovery/root/lib/firmware/tegra210b01_xusb_firmware
+else
+PRODUCT_COPY_FILES += \
+    $(T210_FIRMWARE_PATH)/xusb/tegra21x_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra210/xusb.bin \
+    $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra210b01/xusb.bin \
+    $(T210_FIRMWARE_PATH)/xusb/tegra21x_xusb_firmware:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/nvidia/tegra210/xusb.bin \
+    $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/nvidia/tegra210b01/xusb.bin
+endif
