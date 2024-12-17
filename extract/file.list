@@ -33,9 +33,6 @@ stock-t210	vendor/firmware/tegra21x/vic04_ucode.bin		firmware/tegra21x/
 stock-t210	vendor/firmware/xusb/tegra21x_xusb_firmware		firmware/xusb/
 stock-t210	vendor/firmware/xusb/tegra210b01_xusb_firmware		firmware/xusb/
 
-# Widevine
-stock-t210	vendor/lib/liboemcrypto.so	widevine/lib/
-
 # Bootloader
 # r32 current
 l4t-t210	bootloader/t210ref/cboot.bin			bootloader/

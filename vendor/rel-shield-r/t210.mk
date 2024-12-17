@@ -62,8 +62,3 @@ PRODUCT_PACKAGES += \
     nvhost_nvjpg010 \
     nvhost_tsec \
     vic04_ucode
-
-# Oemcrypto
-ifneq ($(TARGET_TEGRA_WIDEVINE),)
-PRODUCT_PACKAGES += liboemcrypto
-endif
