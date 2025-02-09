@@ -26,7 +26,7 @@ PRODUCT_COPY_FILES += \
     $(T210_FIRMWARE_PATH)/nvidia/gm20b/gr/fecs_inst.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gm20b/gr/fecs_inst.bin \
     $(T210_FIRMWARE_PATH)/nvidia/gm20b/gr/fecs_sig.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gm20b/gr/fecs_sig.bin \
     $(T210_FIRMWARE_PATH)/nvidia/gm20b/gr/gpccs_data.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gm20b/gr/gpccs_data.bin \
-    $(T210_FIRMWARE_PATH)/nvidia/gm20b/gr/gpccs_data.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gm20b/gr/gpccs_data.bin \
+    $(T210_FIRMWARE_PATH)/nvidia/gm20b/gr/gpccs_inst.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gm20b/gr/gpccs_inst.bin \
     $(T210_FIRMWARE_PATH)/nvidia/gm20b/gr/sw_bundle_init.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gm20b/gr/sw_bundle_init.bin \
     $(T210_FIRMWARE_PATH)/nvidia/gm200/gr/sw_method_init.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gm20b/gr/sw_method_init.bin \
     $(T210_FIRMWARE_PATH)/nvidia/gm20b/gr/sw_ctx.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gm20b/gr/sw_ctx.bin \
