@@ -38,21 +38,21 @@ on boot
     chown system system /sys/devices/pwm-fan/rpm_measured
     chmod 0444 /sys/devices/pwm-fan/rpm_measured
     chown system system /sys/devices/pwm-fan/step_time
-    chmod 0644 /sys/devices/pwm-fan/step_time
+    chmod 0664 /sys/devices/pwm-fan/step_time
     chown system system /sys/devices/pwm-fan/tach_enable
-    chmod 0644 /sys/devices/pwm-fan/tach_enable
+    chmod 0664 /sys/devices/pwm-fan/tach_enable
     chown system system /sys/devices/pwm-fan/target_pwm
-    chmod 0644 /sys/devices/pwm-fan/target_pwm
+    chmod 0664 /sys/devices/pwm-fan/target_pwm
     chown system system /sys/devices/pwm-fan/temp_control
-    chmod 0644 /sys/devices/pwm-fan/temp_control
+    chmod 0664 /sys/devices/pwm-fan/temp_control
     chown system system /sys/devices/pwm-fan/fan_profile
-    chmod 0644 /sys/devices/pwm-fan/fan_profile
+    chmod 0664 /sys/devices/pwm-fan/fan_profile
 
 # thermal-fan-est
     chown system system /sys/devices/thermal-fan-est/fan_profile
-    chmod 0644 /sys/devices/thermal-fan-est/fan_profile
+    chmod 0664 /sys/devices/thermal-fan-est/fan_profile
     chown system system /sys/devices/thermal-fan-est/sleep_mode
-    chmod 0644 /sys/devices/thermal-fan-est/sleep_mode
+    chmod 0664 /sys/devices/thermal-fan-est/sleep_mode
 
     chown system system /sys/bus/usb/drivers/usb/unbind
     chmod 0644 /sys/bus/usb/drivers/usb/unbind
