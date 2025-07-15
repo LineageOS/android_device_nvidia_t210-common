@@ -70,7 +70,7 @@ PRODUCT_PACKAGES += \
 
 
 # Recovery / Boot Ramdisk
-ifneq ($(filter $(TARGET_TEGRA_KERNEL), 3.10 4.9),)
+ifneq ($(filter $(TARGET_KERNEL_VERSION), 3.10 4.9),)
 PRODUCT_COPY_FILES += \
     $(T210_FIRMWARE_PATH)/xusb/tegra21x_xusb_firmware:recovery/root/lib/firmware/tegra21x_xusb_firmware \
     $(T210_FIRMWARE_PATH)/xusb/tegra210b01_xusb_firmware:recovery/root/lib/firmware/tegra210b01_xusb_firmware
