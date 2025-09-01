@@ -19,3 +19,9 @@ prebuilt_etc {
     src: "powerhint.json",
     soc_specific: true,
 }
+
+prebuilt_etc {
+    name: "powerhint.nouveau.json",
+    src: "powerhint.nouveau.json",
+    soc_specific: true,
+}

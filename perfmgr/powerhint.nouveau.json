@@ -1,0 +1,127 @@
+{
+    "Nodes": [
+        {
+            "Name": "CPUMinFreq",
+            "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
+            "Values": [
+                "204000",
+                "306000",
+                "408000",
+                "510000",
+                "612000",
+                "714000",
+                "816000",
+                "918000",
+                "1020000",
+                "1122000",
+                "1224000",
+                "1326000",
+                "1428000",
+                "1530000",
+                "1632000",
+                "1734000",
+                "1836000",
+                "1912500",
+                "2014500",
+                "2218500"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "GPUMinFreq",
+            "Path": "/sys/class/devfreq/57000000.gpu/min_freq",
+            "Values": [
+                "76800000",
+                "153600000",
+                "230400000",
+                "307200000",
+                "384000000",
+                "460800000",
+                "537600000",
+                "614400000",
+                "691200000",
+                "768000000",
+                "844800000",
+                "921600000",
+                "998400000"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        }
+    ],
+    "Actions": [
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "CPUMinFreq",
+            "Duration": 1000,
+            "Value": "1326000"
+        },
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "GPUMinFreq",
+            "Duration": 1000,
+            "Value": "537600000"
+        },
+        {
+            "PowerHint": "GAME_LOADING",
+            "Node": "CPUMinFreq",
+            "Duration": 0,
+            "Value": "1326000"
+        },
+        {
+            "PowerHint": "GAME",
+            "Node": "CPUMinFreq",
+            "Duration": 0,
+            "Value": "1326000"
+        },
+        {
+            "PowerHint": "GAME",
+            "Node": "GPUMinFreq",
+            "Duration": 0,
+            "Value": "537600000"
+        },
+        {
+            "PowerHint": "DISPLAY_INACTIVE",
+            "Node": "CPUMinFreq",
+            "Duration": 0,
+            "Value": "204000"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "CPUMinFreq",
+            "Duration": 5000,
+            "Value": "1428000"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "GPUMinFreq",
+            "Duration": 5000,
+            "Value": "307200000"
+        },
+        {
+            "PowerHint": "DISPLAY_CHANGE",
+            "Node": "CPUMinFreq",
+            "Duration": 5000,
+            "Value": "1530000"
+        },
+        {
+            "PowerHint": "DISPLAY_CHANGE",
+            "Node": "GPUMinFreq",
+            "Duration": 5000,
+            "Value": "307200000"
+        },
+        {
+            "PowerHint": "DISPLAY_UPDATE_IMMINENT",
+            "Node": "CPUMinFreq",
+            "Duration": 5000,
+            "Value": "1530000"
+        },
+        {
+            "PowerHint": "DISPLAY_UPDATE_IMMINENT",
+            "Node": "GPUMinFreq",
+            "Duration": 5000,
+            "Value": "307200000"
+        }
+    ]
+}
