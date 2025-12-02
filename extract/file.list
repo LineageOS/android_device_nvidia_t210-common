@@ -1,36 +1,7 @@
 # Firmware
-l4t-t210	drivers/lib/firmware/adsp.elf				firmware/
-stock-t210	vendor/firmware/nvaacdec.elf				firmware/
-stock-t210	vendor/firmware/nvadma.elf				firmware/
-stock-t210	vendor/firmware/nvadma_tx.elf				firmware/
-stock-t210	vendor/firmware/nvapm.elf				firmware/
-stock-t210	vendor/firmware/nvmp3dec.elf				firmware/
-stock-t210	vendor/firmware/nvoice.elf				firmware/
-stock-t210	vendor/firmware/nvspkprot.elf				firmware/
-stock-t210	vendor/firmware/nvsrc.elf				firmware/
-stock-t210	vendor/firmware/gm20b/fecs.bin				firmware/gm20b/
-stock-t210	vendor/firmware/gm20b/fecs_sig.bin			firmware/gm20b/
-stock-t210	vendor/firmware/gm20b/gpccs.bin				firmware/gm20b/
-stock-t210	vendor/firmware/gm20b/gpmu_ucode.bin			firmware/gm20b/
-stock-t210	vendor/firmware/gm20b/gpmu_ucode_desc.bin		firmware/gm20b/
-stock-t210	vendor/firmware/gm20b/gpmu_ucode_image.bin		firmware/gm20b/
-stock-t210	vendor/firmware/gm20b/gpu2cde.bin			firmware/gm20b/
-stock-t210	vendor/firmware/gm20b/NETB_img.bin			firmware/gm20b/
-stock-t210	vendor/firmware/gm20b/nv_acr_ucode_dbg.bin		firmware/gm20b/
-stock-t210	vendor/firmware/gm20b/nv_acr_ucode_prod.bin		firmware/gm20b/
-stock-t210	vendor/firmware/gm20b/pmu_bl.bin			firmware/gm20b/
-stock-t210	vendor/firmware/gm20b/pmu_sig.bin			firmware/gm20b/
-stock-t210	vendor/firmware/tegra21x/nvhost_nvdec_bl_no_wpr020.fw	firmware/tegra21x/
-stock-t210	vendor/firmware/tegra21x/nvhost_nvdec020.fw		firmware/tegra21x/
 stock-t210	vendor/firmware/tegra21x/nvhost_nvdec020_ns.fw		firmware/tegra21x/
-stock-t210	vendor/firmware/tegra21x/nvhost_nvdec020_prod.fw	firmware/tegra21x/
-stock-t210	vendor/firmware/tegra21x/nvhost_nvdec_bl020.fw		firmware/tegra21x/
-stock-t210	vendor/firmware/tegra21x/nvhost_nvdec_bl020_prod.fw	firmware/tegra21x/
 stock-t210	vendor/firmware/tegra21x/nvhost_nvenc050.fw		firmware/tegra21x/
 stock-t210	vendor/firmware/tegra21x/nvhost_nvjpg010.fw		firmware/tegra21x/
-stock-t210	vendor/firmware/tegra21x/nvhost_tsec.fw			firmware/tegra21x/
-stock-t210	vendor/firmware/tegra21x/vic04_ucode.bin		firmware/tegra21x/
-stock-t210	vendor/firmware/xusb/tegra21x_xusb_firmware		firmware/xusb/
 stock-t210	vendor/firmware/xusb/tegra210b01_xusb_firmware		firmware/xusb/
 
 # Bootloader

@@ -15,7 +15,7 @@
 #
 
 TARGET_TEGRA_VERSION         := t210
-TARGET_TEGRA_FIRMWARE_BRANCH ?= rel-shield-r
+TARGET_TEGRA_FIRMWARE_BRANCH ?= linux-firmware
 
 # Properties
 include device/nvidia/t210-common/properties.mk
