@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c578e064_6128d767",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-15T05:00:03Z",
+      "side": 1,
+      "message": "Thanks for this!\n\nSo, you\u0027ll need to V+1/CR+1 these to indicate they \"build and work\" and are \"ready for merge\" respectively.",
+      "revId": "bcbd8399e2ef3dcab8fe42c5c4913df54117367a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
