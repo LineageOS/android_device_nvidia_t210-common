@@ -87,6 +87,7 @@
 /dev/quadd_auth	0660	system	system
 /sys/devices/virtual/input/input*	enabled	0660	system	system
 /dev/hidraw*    0666    system  system
+/dev/hidg*      0666    system  system
 /dev/ozwpan     0666    system  system
 /dev/input/event*       0660    system  input
 /dev/gps	0664	system	system
