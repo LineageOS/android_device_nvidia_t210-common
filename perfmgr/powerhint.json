@@ -71,6 +71,12 @@
             "Node": "CPUMinFreq",
             "Duration": 5000,
             "Value": "1530000"
+        },
+        {
+            "PowerHint": "FIXED_PERFORMANCE",
+            "Node": "CPUMinFreq",
+            "Duration": 0,
+            "Value": "2218500"
         }
     ]
 }

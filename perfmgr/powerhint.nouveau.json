@@ -122,6 +122,18 @@
             "Node": "GPUMinFreq",
             "Duration": 5000,
             "Value": "307200000"
+        },
+        {
+            "PowerHint": "FIXED_PERFORMANCE",
+            "Node": "CPUMinFreq",
+            "Duration": 0,
+            "Value": "2218500"
+        },
+        {
+            "PowerHint": "FIXED_PERFORMANCE",
+            "Node": "GPUMinFreq",
+            "Duration": 0,
+            "Value": "998400000"
         }
     ]
 }
